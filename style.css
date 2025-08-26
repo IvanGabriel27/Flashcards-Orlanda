@@ -19,8 +19,8 @@ footer p {
 }
 :root{
     --text-color:#000000;
-    --card-front-color:#000000;
-    --card-back-color:#000000;
+    --card-front-color:#ff0000;
+    --card-back-color:#00e432;
 }
 #container{
     display: flex;
@@ -56,4 +56,14 @@ footer p {
 .cartao-conteudo-resposta p{
     color: var(--card-back-color);
     font-weight: 700;
+}
+.cartao:hover .cartao-conteudo{
+    transform: rotateY(180deg);
+}
+.cartao-conteudo-pergunta,
+.cartao-conteudo-resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
